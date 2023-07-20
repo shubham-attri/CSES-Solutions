@@ -2,7 +2,7 @@
 // Created by Shubham Attri on 20/07/23.
 //
 
-#include "template.h"
+
 //
 // Created by Shubham Attri on 20/07/23.
 //
@@ -45,12 +45,67 @@ int32_t main(){
 
     int n;
     cin>>n;
+    set<int> set1;
+    set<int> set2;
 
-    if((n*(n+1)/2)%2 != 0 )
-        cout "NO";
-    else{
+
+
+    if(n%4 == 3 ){
+        cout "YES" en
+        set1.insert(1);
+        set1.insert(2);
+        set2.insert(3);
+
+        int i = 4;int j = n;
+        while(i < j){
+            set1.insert(i);
+            set1.insert(j);
+            i++;j--;
+            set2.insert(i);
+            set2.insert(j);
+            i++;j--;
+        }
+        cout set1.size() en
+        for(auto x : set1)
+            cout x <<" ";
+        cout "\n";
+        cout set2.size() en
+        for(auto x : set2)
+            cout x <<" ";
+        cout "\n";
+
+
+
 
     }
+    else if(n%4 == 0 ){
+        cout "YES" en
+		int i = 1;int j = n;
+        while(i < j){
+            set1.insert(i);
+            set1.insert(j);
+            i++;j--;
+            set2.insert(i);
+            set2.insert(j);
+            i++;j--;
+        }
+        cout set1.size() en
+        for(auto x : set1)
+            cout x <<" ";
+        cout "\n";
+        cout set2.size() en
+        for(auto x : set2)
+            cout x <<" ";
+        cout "\n";
+
+
+    }
+    else{
+        cout "NO" en
+    }
+
+
+
 
 
     return 0;
