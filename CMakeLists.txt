@@ -6,4 +6,4 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(InternPrep
-        "88. Merge Sorted Array .cpp" "Median of Two Sorted Arrays .cpp")
+         "CSES/two sets.cpp" CSES/template.h)
