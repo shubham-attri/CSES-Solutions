@@ -1,4 +1,7 @@
 //
+// Created by Shubham Attri on 21/07/23.
+//
+//
 // Created by Shubham Attri on 20/07/23.
 //
 
@@ -25,11 +28,23 @@ using namespace std;
 #define fo(n) for(int i =0 ; i < n ; i++)
 #define en <<endl;
 #define cout cout<<
-#define mod 1e9 +7
-
-
+#define mod 1000000007
 
 #ifndef INTERNPREP_TEMPLATE_H
 #define INTERNPREP_TEMPLATE_H
 
 #endif //INTERNPREP_TEMPLATE_H
+
+
+int32_t main(){
+
+   int n;
+   cin>> n;
+   int ans= 1;
+   for(int i =0 ;i < n;i++){
+       ans = (ans*2)%mod;
+   }
+   cout ans%mod en
+
+    return 0;
+}
