@@ -8,6 +8,7 @@
 #include <map>
 #include <algorithm>
 #include <cmath>
+#include <string>
 
 using namespace std;
 
@@ -35,6 +36,56 @@ using namespace std;
 #endif //INTERNPREP_TEMPLATE_H
 
 int32_t main(){
+
+    string s;
+    cin>>s;
+    map<char,int> m;
+
+    for(int i =0 ; i < s.length();i++){
+        m[s[i]]++;
+    }
+    int count = 0;
+
+    for(auto x: m){
+        if(x.first%2 == 1)
+            count++;
+    }
+
+    if(m.size()%2 == 0 && count >0)
+        cout "NO SOLUTION" en
+    else if(m.size()%2 == 1 && count > 1)
+        cout "NO SOLUTION" en
+    else{
+        
+        if(m.size()%2 == 0){
+            string answer="";
+            for(auto x : m){
+                for(int i = 0 ; i < x.second/2;i++)
+                    answer+= x.first;
+                
+                cout answer;
+                reverse(answer.begin(),answer.end());
+                cout answer; 
+            }
+            
+        }
+        else{
+            char temp ;
+            string answer="";
+            for(auto x : m){
+                if(x.second%2 == 1) temp = x.first;
+
+                for(int i = 0 ; i < x.second/2;i++)
+                    answer += x.first;
+            }
+            answer+=temp;
+            cout answer;
+            reverse(answer.begin(),answer.end());
+            answer.erase(0,0);
+            cout answer;
+        }
+    }
+
 
     return 0;
 }
