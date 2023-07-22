@@ -34,26 +34,7 @@ using namespace std;
 
 #endif //INTERNPREP_TEMPLATE_H
 
-
-
-
-
 int32_t main(){
 
-    int t;
-    cin>>t;
-    while(t--){
-        int a, b;
-        cin>>a>>b;
-
-        if( (a+b)%3 == 0 && 2*(min(a,b)) >= max(a,b))
-            cout "YES" en
-        else ...view save
-
-            cout "NO" en
-
-    }
     return 0;
-
 }
-
