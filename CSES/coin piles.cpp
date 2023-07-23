@@ -48,8 +48,7 @@ int32_t main(){
 
         if( (a+b)%3 == 0 && 2*(min(a,b)) >= max(a,b))
             cout "YES" en
-        else ...view save
-
+        else
             cout "NO" en
 
     }
