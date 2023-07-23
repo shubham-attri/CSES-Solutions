@@ -41,51 +41,106 @@ int32_t main(){
     cin>>s;
     map<char,int> m;
 
-    for(int i =0 ; i < s.length();i++){
-        m[s[i]]++;
-    }
-    int count = 0;
+    bool flag = true;
 
-    for(auto x: m){
-        if(x.first%2 == 1)
-            count++;
+    for(auto i :s)
+        m[i]++;
+
+
+
+    char x ='-';int c = 0;
+    for(auto i: m){
+        if(i.second%2 == 1){
+            c++;x=i.first;
+        }
+    }
+    if(c>1){
+        cout "NO SOLUTION" en
+        return 0 ;
+    }
+    string ans;
+
+    for(auto k : m){
+        if(k.first == x) continue;
+        fo(k.second/2){
+            ans+=k.first;
+        }
+    }
+    if(x!= '-'){
+        fo(m[x]){
+            ans += x;
+        }
     }
 
-    if(m.size()%2 == 0 && count >0)
-        cout "NO SOLUTION" en
-    else if(m.size()%2 == 1 && count > 1)
-        cout "NO SOLUTION" en
-    else{
-        
-        if(m.size()%2 == 0){
-            string answer="";
-            for(auto x : m){
-                for(int i = 0 ; i < x.second/2;i++)
-                    answer+= x.first;
-                
-                cout answer;
-                reverse(answer.begin(),answer.end());
-                cout answer; 
-            }
-            
+    for(auto i = m.rbegin();i != m.rend();i++){
+        if((*i).first == x) continue;
+        for(int j = 0; j < (*i).second/2;j++){
+            ans += (*i).first;
+        }
+    }
+    cout ans en
+    return 0;
+
+
+
+
+
+
+    if(m.size()%2 == 0){
+    	for(auto x: m){
+            if(x.second%2 ==1)
+                flag = false;
+        }
+
+        if(!flag){
+            cout "NO SOLUTION" en
         }
         else{
-            char temp ;
-            string answer="";
-            for(auto x : m){
-                if(x.second%2 == 1) temp = x.first;
-
-                for(int i = 0 ; i < x.second/2;i++)
-                    answer += x.first;
+            string ans = "";
+            for(auto x: m)
+            {
+                for(int i =0;i < x.second/2 ;i++)
+                    ans += x.first;
             }
-            answer+=temp;
-            cout answer;
-            reverse(answer.begin(),answer.end());
-            answer.erase(0,0);
-            cout answer;
+            cout ans;
+            reverse(ans.begin(),ans.end());
+            cout ans;
         }
+    }
+    else{
+        int count = 0;
+        for(auto x:m){
+            if(x.second%2 == 1)
+                count++;
+        }
+        if(count>1)
+            flag = false;
+
+        if(!flag )
+            cout "NO SOLUTION" en
+
+        else{
+            char temp;
+        	string ans = "";
+            for(auto x: m){
+                if(x.second%2 == 1){
+                    temp = x.first;
+                }
+                for(int i =0 ; i < x.second/2;i++)
+                    ans += x.first;
+            }
+            cout ans ;
+            cout temp;
+            reverse(ans.begin(),ans.end());
+            cout ans;
+        }
+
+
     }
 
 
-    return 0;
+
+
+
+
 }
