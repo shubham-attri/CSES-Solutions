@@ -1,13 +1,10 @@
-//
-// Created by Shubham Attri on 20/07/23.
-//
-
 #include <iostream>
 #include <vector>
 #include <set>
 #include <map>
 #include <algorithm>
 #include <cmath>
+#include <bitset>
 
 using namespace std;
 
@@ -26,6 +23,7 @@ using namespace std;
 #define en <<endl;
 #define cout cout<<
 #define mod 1e9 +7
+#define sort(a) sort(a.begin(),a.end())
 
 
 
@@ -33,3 +31,9 @@ using namespace std;
 #define INTERNPREP_TEMPLATE_H
 
 #endif //INTERNPREP_TEMPLATE_H
+
+
+int32_t main() {
+
+    return 0;
+}
