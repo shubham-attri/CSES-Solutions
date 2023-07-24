@@ -9,6 +9,7 @@
 #include <algorithm>
 #include <cmath>
 #include <string>
+#include <bitset>
 
 using namespace std;
 
@@ -37,12 +38,28 @@ using namespace std;
 
 
 
-
 int32_t main(){
 
     int n;
     cin>>n;
+	vector<int> v;
+        int p=(1<<n);
+        for(int i=0; i<p; i++){
+            v.push_back(i^(i/2));
+        }
 
+        for(auto x: v){
+            string s ="";
+            while(x>0){
+                s+= to_string(x%2);
+                x/=2;
+            }
+            reverse(s.begin(),s.end());
+            fo(n-s.size())
+            	cout 0 ;
+            cout s en
+
+        }
 
 
 
