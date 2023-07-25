@@ -19,7 +19,7 @@ using namespace std;
 #define mii map<int,int>
 #define vinp(a,n) for(int i=0;i<n;i++)cin>>a[i];
 #define vout(a,n) for(int i=0;i<n;i++)cout a[i]<<" ";
-#define fo(n) for(int i =0 ; i < n ; i++)
+#define fo(i,n) for(int i =0 ; i < n ; i++)
 #define en <<endl;
 #define cout cout<<
 #define mod 1e9 +7
