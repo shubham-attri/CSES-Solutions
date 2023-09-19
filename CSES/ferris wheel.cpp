@@ -37,32 +37,22 @@ using namespace std;
 
 
 int32_t main() {
-
-    int n;
-    cin>>n;
-    int k;
-    cin>>k;
-    vi a;
-    fo(i,n){
-        int m;
-        cin>>m;
-        a.pb(m);
-    }
+    int n,k;
+    cin>>n>>k;
+    vi a(n);
+    vinp(a,n)
     sort(a);
     int ans = 0;
-    int cs =0;
-    for(auto x: a){
-        if( cs + x <= k)
-            cs+=x;
-        else{
-            cs = x;
-            if(cs > k){
-                continue;
-            }
-            ans++;
+    int left = 0;
+    int right = n-1;
+   while(left <= right){
+        if(a[left] + a[right] <= k)
+        {
+            left++;
         }
-    }
-
-    cout ans +1 en
+        right--;
+        ans++;
+   }
+    cout ans en
     return 0;
 }

@@ -36,19 +36,8 @@ using namespace std;
 
 #endif //INTERNPREP_TEMPLATE_H
 
-vector<vector<int>> matrix;
-int count  = 0;
-bool is_valid(int i , int j){
-    return i < 7 && i >=0 && j < 7 && j >=0;
-}
-
-
 
 int32_t main() {
-
-
-
-
 
 
 
