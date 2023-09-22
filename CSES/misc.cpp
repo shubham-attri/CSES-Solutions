@@ -32,7 +32,7 @@ using namespace std;
 
 #endif //INTERNPREP_TEMPLATE_H
 
-int32_t breedcounting(){
+int32_t breedcountingusco(){
      int n,q,k;cin>>n>>q;
     vector<vector<int>> a(3,vi (n+1,0));
     for(int i =1;i <=n;i++){
