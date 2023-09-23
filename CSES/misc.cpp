@@ -53,3 +53,20 @@ int32_t breedcountingusco(){
     }
     return 0;
 }
+
+
+int32_t sumuptosevenusco() {
+
+    int n;cin>>n;vi a(n+1,0);
+    for(int i=1;i<=n;i++){int k;cin>>k;a[i] = (a[i-1]+a[i])%7;}
+    vi lf(7,-1);
+    int answer =0;
+    fo(i,n+1){
+        if(lf[a[i]] == -1 )
+            lf[a[i]] =i;
+        else
+            answer = max(i-lf[a[i]],answer);
+    }
+    cout answer en
+    return 0;
+}
