@@ -70,3 +70,28 @@ int32_t sumuptosevenusco() {
     cout answer en
     return 0;
 }
+
+int32_t main(){
+    int n;
+    cin>>n;
+    while(n--){
+        int a;cin>>a;
+        if(a < 7) {
+            cout "NO" en
+            continue;
+        }
+        int x = 1,y=2,z =a-3;
+        if(z%3 ==0)
+        {z-=2;
+        y+=2;}
+        if(z>y)
+        {
+            cout "YES" en
+            cout x <<" "<<y<<" " << z en
+            continue;
+        }
+        else
+            cout "NO" en
+
+    }
+}
