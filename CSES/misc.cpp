@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <cmath>
 #include <bitset>
+#include <iomanip>
 
 using namespace std;
 
@@ -70,28 +71,78 @@ int32_t sumuptosevenusco() {
     cout answer en
     return 0;
 }
+//
+//int32_t function{
+//    int n;
+//    cin>>n;
+//    while(n--){
+//        int a;cin>>a;
+//        if(a < 7) {
+//            cout "NO" en
+//            continue;
+//        }
+//        int x = 1,y=2,z =a-3;
+//        if(z%3 ==0)
+//        {z-=2;
+//        y+=2;}
+//        if(z>y)
+//        {
+//            cout "YES" en
+//            cout x <<" "<<y<<" " << z en
+//            continue;
+//        }
+//        else
+//            cout "NO" en
+//
+//    }
+//}
 
-int32_t main(){
-    int n;
-    cin>>n;
-    while(n--){
-        int a;cin>>a;
-        if(a < 7) {
+void solvea(){
+    int t;cin>>t;
+    while(t--){
+        int n;cin>>n;
+
+        if(n < 7 )
+        {
             cout "NO" en
             continue;
         }
-        int x = 1,y=2,z =a-3;
-        if(z%3 ==0)
-        {z-=2;
-        y+=2;}
-        if(z>y)
-        {
+        int x=1,y=2,z=n-3;
+        if(z%3 ==0){
+            z-=2;
+            y+=2;
+        }
+        if(z>y){
             cout "YES" en
-            cout x <<" "<<y<<" " << z en
-            continue;
+            cout x<<" "<<y<<" "<<z en
         }
         else
             cout "NO" en
 
     }
+}
+
+
+void solveb(){
+    int t;cin>>t;
+    while(t--){
+        int ax,ay,bx,by,px,py;
+        cin>>px>>py>>ax>>ay>>bx>>by;
+
+        double ap = sqrt((ax-px)*(ax-px) + (ay-py)*(ay-py));
+        double ao = sqrt(ax*ax + ay*ay);
+        double bp = sqrt((bx-px)*(bx-px) + (by-py)*(by-py));
+        double bo = sqrt(bx*bx + by*by);
+        double ab = sqrt((ax-bx)*(ax-bx) + (ay-by)*(ay-by))/2.0;
+        double answer = min(min(max(ap,ao),max(bp,bo)),min(max(ab,max(bp,ao)),max(ab,max(ap,bo))));
+        cout setprecision(12)<<answer en
+
+    }
+}
+
+int32_t main(){
+//    solvea();
+    solveb();
+    return 0;
+
 }
