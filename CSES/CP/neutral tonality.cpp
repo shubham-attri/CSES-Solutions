@@ -25,26 +25,30 @@ signed main(){
         cin>>n>>m;
 
         vector<int> a(n),b(m);
-        for(int i =0;i<n,i++)cin>>a[i];
+        for(int i =0;i<n;i++)cin>>a[i];
         for(int i =0;i<m;i++)cin>>b[i];
+        
+        sort(b.begin(),b.end());
+        reverse(b.begin(),b.end());
 
+        int ap = 0;
+        int bp = 0;
 
+        vector<int> answer;
 
-        int i =0;
-        int j = 0;
+        while(ap < n && bp < m){
 
-        while(j< n){
-            if(a[])
+            if(a[ap] < b[bp] )answer.push_back(b[bp]),bp++;
+            else answer.push_back(a[ap]),ap++;
 
         }
+        while(bp<m) answer.push_back(b[bp]),bp++;
+        while(ap<n) answer.push_back(a[ap]),ap++;
 
-        
-
+        for(auto x: answer) cout<<x<<" ";     
+        cout<<endl;   
 
     }
-
-
-
 
     return 0;
 }

@@ -33,27 +33,27 @@ using namespace std;
 
 #endif //INTERNPREP_TEMPLATE_H
 
-int32_t breedcountingusco(){
-     int n,q,k;cin>>n>>q;
-    vector<vector<int>> a(3,vi (n+1,0));
-    for(int i =1;i <=n;i++){
-        cin>>k;
-        a[0][i] = a[0][i-1];
-        a[1][i] = a[1][i-1];
-        a[2][i] = a[2][i-1];
-        a[k-1][i] +=1;
-    }
-//    vout(a[0],n+1) cout endl;
-//    vout(a[1],n+1) cout endl;
-//    vout(a[2],n+1) cout endl;
+// int32_t breedcountingusco(){
+//      int n,q,k;cin>>n>>q;
+//     vector<vector<int>> a(3,vi (n+1,0));
+//     for(int i =1;i <=n;i++){
+//         cin>>k;
+//         a[0][i] = a[0][i-1];
+//         a[1][i] = a[1][i-1];
+//         a[2][i] = a[2][i-1];
+//         a[k-1][i] +=1;
+//     }
+// //    vout(a[0],n+1) cout endl;
+// //    vout(a[1],n+1) cout endl;
+// //    vout(a[2],n+1) cout endl;
 
-    while(q--){
-        int c,b;
-        cin>>c>>b;
-        cout a[0][b] - a[0][c-1] <<" " << a[1][b] - a[1][c-1]  <<" "<< a[2][b] - a[2][c-1] en
-    }
-    return 0;
-}
+//     while(q--){
+//         int c,b;
+//         cin>>c>>b;
+//         cout a[0][b] - a[0][c-1] <<" " << a[1][b] - a[1][c-1]  <<" "<< a[2][b] - a[2][c-1] en
+//     }
+//     return 0;
+// }
 
 
 int32_t sumuptosevenusco() {
@@ -140,7 +140,20 @@ void solveb(){
     }
 }
 
+void solvec(){
+
+    int t;cin>>t;
+    string s;cin>>s;
+
+
+
+
+}
+
+
 int32_t main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 //    solvea();
     solveb();
     return 0;

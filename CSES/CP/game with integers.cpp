@@ -7,7 +7,7 @@ using namespace std;
 
 #define mod 1e9+7
 #define putyes cout<<"YES"<<endl
-#define putno cout<<"NO"<<end
+#define putno cout<<"NO"<<endl
 #define int long long 
 
 
@@ -18,16 +18,15 @@ signed main(){
 
     int tc;
     cin>>tc;
-    while(tc--){
-        int n;
-        cin>>n;
-        string s;
-        cin>>s;
-
-        cout<<s[n-1]<<endl;
-        
+    while(tc--)
+    {
+        int n;cin>>n;
+        if(n%3 == 1 || n%3 == 2) cout<<"First"<<endl;
+        else cout<<"Second"<<endl;
 
     }
+
+
 
     return 0;
 }

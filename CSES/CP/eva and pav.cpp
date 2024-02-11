@@ -29,11 +29,20 @@ signed main(){
         }
 
         int q;cin>>q;
+
+        
+
         while(q--){
             int l;cin>>l;
             int k;cin>>k;
 
             int previous = v[l-1];
+
+            if(previous < k)
+            {
+                cout<<-1<<" ";
+                continue;
+            }
             int answer = -1;
 
             for(int i =l-1; i <= n-1;i++){

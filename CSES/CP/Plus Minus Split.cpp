@@ -7,7 +7,7 @@ using namespace std;
 
 #define mod 1e9+7
 #define putyes cout<<"YES"<<endl
-#define putno cout<<"NO"<<end
+#define putno cout<<"NO"<<endl
 #define int long long 
 
 
@@ -20,12 +20,18 @@ signed main(){
     cin>>tc;
     while(tc--){
         int n;
-        cin>>n;
         string s;
-        cin>>s;
+        cin>>n>>s;
+        int pc = 0;
+        int nc = 0;
 
-        cout<<s[n-1]<<endl;
-        
+        for(auto x: s){
+            if(x == '+')pc++;
+            else nc++;
+        }
+
+        cout<<abs(pc-nc)<<endl;
+
 
     }
 
