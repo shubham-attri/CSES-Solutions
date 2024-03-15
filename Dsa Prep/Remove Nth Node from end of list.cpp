@@ -1,10 +1,11 @@
 class Solution{
   public:
-    ListNode* removeNthFromEnd(ListNode* head,int n){
+    ListNode* removeNthFromEnd(ListNode* head,inthttps://www.producthunt.com/ n){
     
       ListNode* dummy = ListNode(0);
       
       dummy->next = head;
+
 
       ListNode *first = dummy;
       ListNode *second = dummy;
