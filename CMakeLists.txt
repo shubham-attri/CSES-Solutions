@@ -6,4 +6,4 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(InternPrep
-          CSES/template.h "CSES/bit strings.cpp")
+        CSES/misc.cpp)

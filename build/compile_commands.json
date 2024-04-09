@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/attri/Desktop/Attri/Resume/InternPrep/build",
+  "command": "/usr/bin/clang++ -I/Users/attri/Desktop/Attri/Resume/InternPrep/. -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -o CMakeFiles/InternPrep.dir/CSES/misc.cpp.o -c /Users/attri/Desktop/Attri/Resume/InternPrep/CSES/misc.cpp",
+  "file": "/Users/attri/Desktop/Attri/Resume/InternPrep/CSES/misc.cpp",
+  "output": "CMakeFiles/InternPrep.dir/CSES/misc.cpp.o"
+}
+]
