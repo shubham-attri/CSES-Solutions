@@ -5,11 +5,7 @@ from email.mime.base import MIMEBase
 from email import encoders
 
 
-# Your email credentials
-sender_email = "stanzin22509@iiitd.ac.in"
-sender_password = "slehm10cr7"
 
-to_email = "shubham21354@iiitd.ac.in"
 
 # Email content
 subject = "AP Endsem"
